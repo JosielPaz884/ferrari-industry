@@ -1,12 +1,17 @@
-function NotFoundPage(params) {
-    
-    return(
-        <>
-        <div>
-            404
-        </div>
-        </>
-    )
-}
+import styled from "styled-components";
 
-export default NotFoundPage
+const Style404 = styled.div`
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+`;
+
+export default function NotFoundPage() {
+  return (
+    <Style404>
+      <div className="div-letf"></div>
+      <div className="div-right"></div>
+    </Style404>
+  );
+}
